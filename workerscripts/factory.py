@@ -4,7 +4,7 @@ import serial
 import glob
 
 BAUD = 115200
-META_MODE_COMMAND = b"fastboot oem factory"
+META_MODE_COMMAND = b"fastboot oem factory" # useless
 
 def serial_ports():
     """ Lists available serial ports
@@ -71,5 +71,4 @@ if __name__ == "__main__":
     with serial.Serial(port, BAUD) as dev:
         dev.write(b'FACTFACT') # Write command to Preloader
 
-    print("Factory mode boot command sent to port:", port)
     print ("You should now boot into Factory Mode.")
