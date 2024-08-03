@@ -15,7 +15,7 @@ This is a Android All-in-One Script made with Windows Batch language.
 **Not following these requirements results in the Script not working or have limited capability.**
 
 # How to Use
-> Download the **zip** from the Releases page.
+> Download the **zip (not source code)** from the Releases page.
 
 > Next extract the zip and put it in **Downloads (recommended)** or any path you prefer.
 
