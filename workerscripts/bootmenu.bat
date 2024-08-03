@@ -27,9 +27,7 @@ echo * OTHER STUFF *
 echo Meta           =   Little Kernel Meta Mode     * ONLY FOR MEDIATEK DEVICES *
 echo Factory        =   Factory Mode                * ONLY FOR MEDIATEK DEVICES *
 echo Preloader      =   Preloader Mode              * ONLY FOR MEDIATEK DEVICES *
-echo PLTerminal     =   Preloader Terminal          * ONLY FOR MEDIATEK DEVICES IN PRELOADER MODE *
 echo Download       =   BootROM Download Mode       * ONLY FOR MEDIATEK DEVICES WITH DL ACCESS *
-echo DLTerminal     =   Download Mode Terminal      * ONLY FOR MEDIATEK DEVICES IN DOWNLOAD MODE *
 echo.
 
 set /p mode="Select a Option from the list: "
