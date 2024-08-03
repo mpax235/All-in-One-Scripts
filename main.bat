@@ -1,6 +1,6 @@
 @echo off
 cls
-set ver=8/03/2024 at 12:23 AM UTC
+set ver=8/03/2024 at 3:51 PM UTC
 color 3
 echo mpax235's Android All-in-One Script
 echo %ver%
