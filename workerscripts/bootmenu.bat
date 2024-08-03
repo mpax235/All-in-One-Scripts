@@ -13,75 +13,75 @@ echo.
 echo *** MENU ***
 echo.
 echo * ADB STUFF *
-echo OS             =   Android
-echo Recovery       =   Android Recovery
-echo fastbootd      =   Android Fastboot            * ONLY FOR ANDROID 10 AND LATER *
-echo Fastboot       =   Fastboot
+echo (1)  OS             =   Android
+echo (2)  Recovery       =   Android Recovery
+echo (3)  fastbootd      =   Android Fastboot            * ONLY FOR ANDROID 10 AND LATER *
+echo (4)  Fastboot       =   Fastboot
 echo.
 echo * FASTBOOT STUFF *
-echo OS2            =   Android
-echo fastbootd2     =   Android Fastboot            * ONLY FOR ANDROID 10 AND LATER *
-echo Fastboot2      =   Fastboot
+echo (5)  OS2            =   Android
+echo (6)  fastbootd2     =   Android Fastboot            * ONLY FOR ANDROID 10 AND LATER *
+echo (7)  Fastboot2      =   Fastboot
 echo.
 echo * OTHER STUFF *
-echo Meta           =   Little Kernel Meta Mode     * ONLY FOR MEDIATEK DEVICES *
-echo Factory        =   Factory Mode                * ONLY FOR MEDIATEK DEVICES *
-echo Preloader      =   Preloader Mode              * ONLY FOR MEDIATEK DEVICES *
-echo Download       =   BootROM Download Mode       * ONLY FOR MEDIATEK DEVICES WITH DL ACCESS *
+echo (8)  Meta           =   Little Kernel Meta Mode     * ONLY FOR MEDIATEK DEVICES *
+echo (9)  Factory        =   Factory Mode                * ONLY FOR MEDIATEK DEVICES *
+echo (A)  Preloader      =   Preloader Mode              * ONLY FOR MEDIATEK DEVICES *
+echo (B)  Download       =   BootROM Download Mode       * ONLY FOR MEDIATEK DEVICES WITH DL ACCESS *
 echo.
 
-set /p mode="Select a Option from the list: "
+set /p mode="Select a Option from the list with Number: "
 
-if "%mode%"=="OS" (
+if "%mode%"=="1" (
     echo Booting into Android...
     echo ** IF THE SCRIPT GETS STUCK EXIT WITH CTRL+C **
     adb reboot
     echo You should now boot into Android.
 )
 
-if "%mode%"=="Recovery" (
+if "%mode%"=="2" (
     echo Booting into Android Recovery...
     echo ** IF THE SCRIPT GETS STUCK EXIT WITH CTRL+C **
     adb reboot recovery
     echo You should now boot into Android Recovery.
 )
 
-if "%mode%"=="fastbootd" (
+if "%mode%"=="3" (
     echo Booting into Android Fastboot...
     echo ** IF THE SCRIPT GETS STUCK EXIT WITH CTRL+C **
     adb reboot fastboot
     echo You should now boot into Android Fastboot.
 )
 
-if "%mode%"=="Fastboot" (
+if "%mode%"=="4" (
     echo Booting into Fastboot...
     echo ** IF THE SCRIPT GETS STUCK EXIT WITH CTRL+C **
     adb reboot bootloader
     echo You should now boot into Fastboot.
 )
 
-if "%mode%"=="OS2" (
+if "%mode%"=="5" (
     echo Booting into Android...
     echo ** IF THE SCRIPT GETS STUCK EXIT WITH CTRL+C **
     fastboot reboot
     echo You should now boot into Android.
 )
 
-if "%mode%"=="fastbootd2" (
+if "%mode%"=="6" (
     echo Booting into Android Fastboot...
     echo ** IF THE SCRIPT GETS STUCK EXIT WITH CTRL+C **
     fastboot reboot fastboot
     echo You should now boot into Android Fastboot.
 )
 
-if "%mode%"=="Fastboot2" (
+if "%mode%"=="7" (
     echo Booting into Fastboot...
     echo ** IF THE SCRIPT GETS STUCK EXIT WITH CTRL+C **
     fastboot reboot bootloader
     echo You should now boot into Fastboot.
 )
 
-if "%mode%"=="Meta" (
+if "%mode%"=="8" (
     adb shell reboot -p
     echo Please power off the device by holding the Power Button until it turns off.
     echo If you are using ADB, it will power off automatically.
@@ -98,7 +98,7 @@ if "%mode%"=="Meta" (
     cd ..
 )
 
-if "%mode%"=="Factory" (
+if "%mode%"=="9" (
     adb shell reboot -p
     echo Please power off the device by holding the Power Button until it turns off.
     echo If you are using ADB, it will power off automatically.
@@ -115,7 +115,7 @@ if "%mode%"=="Factory" (
     cd ..
 )
 
-if "%mode%"=="Preloader" (
+if "%mode%"=="A" (
     adb shell reboot -p
     echo Please power off the device by holding the Power Button until it turns off.
     echo If you are using ADB, it will power off automatically.
@@ -133,7 +133,7 @@ if "%mode%"=="Preloader" (
     cd ..
 )
 
-if "%mode%"=="Download" (
+if "%mode%"=="B" (
     adb shell reboot -p
     echo Please power off the device by holding the Power Button until it turns off.
     echo If you are using ADB, it will power off automatically.
