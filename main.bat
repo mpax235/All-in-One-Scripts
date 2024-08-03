@@ -15,12 +15,12 @@ fastboot devices
 echo.
 echo *** MENU ***
 echo.
-echo Boot Menu
+echo (1)  Boot Menu
 echo.
 
-set /p mode="Select a Option from the list: "
+set /p mode="Select a Option from the list with Number: "
 
-if "%mode%"=="Boot Menu" (
+if "%mode%"=="1" (
     echo Boot Menu...
     cd "workerscripts"
     bootmenu.bat
