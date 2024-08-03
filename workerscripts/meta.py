@@ -4,7 +4,7 @@ import serial
 import glob
 
 BAUD = 115200
-META_MODE_COMMAND = b"fastboot oem factory"
+META_MODE_COMMAND = b"fastboot oem factory" # useless
 
 def serial_ports():
     """ Lists available serial ports
