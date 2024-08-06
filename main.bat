@@ -1,6 +1,6 @@
 @echo off
 cls
-set ver=1.0.0
+set ver=1.0.1
 color 3
 echo mpax235's Android All-in-One Script
 echo Version %ver%
