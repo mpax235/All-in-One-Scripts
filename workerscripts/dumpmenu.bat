@@ -25,12 +25,17 @@ if "%mode%"=="1" (
         echo mtkclient not found.
 	echo.
     cd ..
-	echo Hint: Put the second mtkclient folder inside the first
+	echo Hint: Put the second mtkclient folder (if zip) inside the first
 	echo for the script to read it.
+	echo.
+	echo or if you git cloned mtkclient, just put the mtkclient folder
+	echo in the mtkclient folder in workerscripts for the script to read it.
         pause
         exit /b
     )
     cd mtkclient
+    color 7
+    cls
     python3 mtk.py dumpbrom --filename=mediatek_brom_dump_android_script.bin
 )
 
@@ -40,10 +45,15 @@ if "%mode%"=="2" (
         echo mtkclient not found.
 	echo.
     cd ..
-	echo Hint: Put the second mtkclient folder inside the first
+	echo Hint: Put the second mtkclient folder (if zip) inside the first
 	echo for the script to read it.
+	echo.
+	echo or if you git cloned mtkclient, just put the mtkclient folder
+	echo in the mtkclient folder in workerscripts for the script to read it.
         pause
         exit /b
     )
     cd mtkclient
+    color 7
+    cls
 )
