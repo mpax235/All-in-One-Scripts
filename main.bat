@@ -8,7 +8,7 @@ adb devices >nul 2>&1 && (
     pause
     curl -o ./platform-tools.zip "https://dl.google.com/android/repository/platform-tools-latest-windows.zip"
     tar -xf platform-tools.zip
-    xcopy platform-tools "C:\Users\wishd\Downloads\Android All-in-One Script" /s /e
+    xcopy platform-tools %chdir% /s /e
     del platform-tools.zip
     echo deleting platform-tools folder
     pause
