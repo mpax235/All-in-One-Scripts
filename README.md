@@ -19,9 +19,11 @@ This is a Android All-in-One Script made with Windows Batch language.
 # How to Use
 > Download the **zip (not source code)** from the Releases page.
 
-> Next extract the zip and put it in **Downloads**.
+> Next extract the zip and put it in the path you desire.
 
-> After this open Command Prompt and type in `cd "<disk letter here>:\Users\<user here>\Downloads\Android All-in-One Script\Android All-in-One Script"`.
+> After this open Command Prompt and type in `cd "<disk letter here>:\Users\<user here>\<your path here>\Android.All-in-One.Script\Android All-in-One Script"`.
+
+> For macOS/Linux, put it in your **home/<user here>** and then type in `cd "Android.All-in-One.Script/Android All-in-One Script"`.
 
 > Now startup the script by typing in `main` (windows) or `./main.sh` (linux/macos). You should see the Terminal text color change to blue if successful or no errors.
 
