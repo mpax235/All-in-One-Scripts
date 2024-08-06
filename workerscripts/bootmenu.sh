@@ -1,3 +1,5 @@
+#!/bin/bash
+
 clear
 echo -e "\e[34mmpax235's Android All-in-One Script\e[0m"
 echo -e "\e[1m--- BOOT MENU ---\e[0m"
