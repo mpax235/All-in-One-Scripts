@@ -63,4 +63,62 @@ elif [ "$mode" == "7" ]; then
     echo "-- IF THE SCRIPT GETS STUCK EXIT WITH CTRL+C --"
     sudo fastboot reboot bootloader
     echo "You should now boot into Fastboot."
+elif [ "$mode" == "8" ]; then
+    adb shell reboot -p
+    echo "Please power off the device by holding the Power Button until it turns off."
+    echo "If you are using ADB, it will power off automatically."
+    echo "Then disconnect the USB cable if connected and then press ENTER to continue."
+    echo "Also check Python 3 by running Python3, if it says it does not exist, please install it."
+    echo "After installing or you have Python, install pyserial via 'pip3 install pyserial'."
+    echo
+
+    read -p "ready? " ready
+
+    echo "Meta Mode..."
+    python3 meta.py
+    cd ..
+elif [ "$mode" == "9" ]; then
+    adb shell reboot -p
+    echo "Please power off the device by holding the Power Button until it turns off."
+    echo "If you are using ADB, it will power off automatically."
+    echo "Then disconnect the USB cable if connected and then press ENTER to continue."
+    echo "Also check Python 3 by running Python3, if it says it does not exist, please install it."
+    echo "After installing or you have Python, install pyserial via 'pip3 install pyserial'."
+    echo
+
+    read -p "ready? " ready
+
+    echo "Factory Mode..."
+    python3 factory.py
+    cd ..
+elif [ "$mode" == "A" ]; then
+    adb shell reboot -p
+    echo "Please power off the device by holding the Power Button until it turns off."
+    echo "If you are using ADB, it will power off automatically."
+    echo "Then disconnect the USB cable if connected and then press ENTER to continue."
+    echo "Also check Python 3 by running Python3, if it says it does not exist, please install it."
+    echo "After installing or you have Python, install pyserial via 'pip3 install pyserial'."
+    echo
+
+    read -p "ready? " ready
+
+    echo "Preloader Mode..."
+    cd "preloadermode"
+    ./prepare.sh
+    cd ..
+elif [ "$mode" == "B" ]; then
+    adb shell reboot -p
+    echo "Please power off the device by holding the Power Button until it turns off."
+    echo "If you are using ADB, it will power off automatically."
+    echo "Then disconnect the USB cable if connected and then press ENTER to continue."
+    echo "Also check Python 3 by running Python3, if it says it does not exist, please install it."
+    echo "After installing or you have Python, install pyserial via 'pip3 install pyserial'."
+    echo
+
+    read -p "ready? " ready
+
+    echo "Download Mode..."
+    cd "preloadermode"
+    ./prepare.sh
+    cd ..
 fi
