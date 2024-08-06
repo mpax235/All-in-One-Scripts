@@ -45,7 +45,7 @@ This is a Android All-in-One Script made with Windows Batch language.
 > 
 > For example `trona` and 2020 or later Amazon tablets has Download Mode disabled so if you erase `preloader`, the Tablet will hard brick since there is no Download Mode, requiring inexpensive tools to flash the `preloader` back.
 >
-> A list of devices having Download Mode disabled can be found in the root of the repo with the filename `bromdisabled.txt`.
+> A list of devices having Download Mode disabled can be found in the root of the repo with the filename `DLdisabled.md`.
 > For these devices there is no known way to dump the BootROM as the dumping BootROM code in `mtkclient` requires you to be in Download Mode.
 # Credits
 - [mpax235](https://github.com/mpax235) for creating this Script
