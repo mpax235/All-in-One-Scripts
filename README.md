@@ -25,6 +25,8 @@ This is a Android All-in-One Script made with Windows Batch language.
 
 > For macOS/Linux, put it in your **home/<user here>** and then type in `cd "Android.All-in-One.Script/Android All-in-One Script"`.
 
+> If you are using an older version, run chmod +x ./main.sh before running the next command.
+
 > Now startup the script by typing in `main` (windows) or `./main.sh` (linux/macos). You should see the Terminal text color change to blue if successful or no errors.
 
 > To use the options, type the Number corresponding to the Option you want to use like (for example: you would type **1** if you want to reboot to OS).
