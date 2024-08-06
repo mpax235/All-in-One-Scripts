@@ -1,17 +1,18 @@
 @echo off
+
 adb devices >nul 2>&1 && (
     echo found adb
 ) || (
     echo adb not found, installing
-echo by unpausing you agree to the terms listed on https://developer.android.com/tools/releases/platform-tools.
-pause
-curl -o ./platform-tools.zip "https://dl.google.com/android/repository/platform-tools-latest-windows.zip"
-tar -xf platform-tools.zip
-xcopy platform-tools "C:\Users\wishd\Downloads\Android All-in-One Script" /s /e
-del platform-tools.zip
-echo deleting platform-tools folder
-pause
-del platform-tools
+    echo by unpausing you agree to the terms listed on https://developer.android.com/tools/releases/platform-tools.
+    pause
+    curl -o ./platform-tools.zip "https://dl.google.com/android/repository/platform-tools-latest-windows.zip"
+    tar -xf platform-tools.zip
+    xcopy platform-tools "C:\Users\wishd\Downloads\Android All-in-One Script" /s /e
+    del platform-tools.zip
+    echo deleting platform-tools folder
+    pause
+    del platform-tools
 )
 
 cls
