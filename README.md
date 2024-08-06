@@ -32,10 +32,12 @@ This is a Android All-in-One Script made with Windows Batch language.
 # Information
 > [!NOTE]\
 > Some devices dont have or restrict you from entering Factory Mode.
+> 
 > For example, on `tungsten` (Fire HD 10 2023), if you try entering Factory Mode the device will become stuck on the Amazon logo, after a while the logo will disappear, leaving only the backlight, a while later after the Amazon logo disappears, the device reboots into Normal Mode. This is because of the Tablet having no Factory Mode.
 
 > [!NOTE]\
 > Some devices has patched the `dev.write(b'METAMETA')`/`dev.write(b'ADVEMETA')` method, making it boot back to somewhere else instead of Meta Mode.
+> 
 > For example, on `tungsten` (Fire HD 10 2023), if you try entering Meta Mode the device will instead boot into Normal Mode, however on `trona` (Fire HD 10 2021), the tablet boots into Meta Mode fine expect that it auto-reboots into normal mode after a while being in Meta Mode.
 # Credits
 - [mpax235](https://github.com/mpax235) for creating this Script
