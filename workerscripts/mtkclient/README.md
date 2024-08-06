@@ -1,3 +1,4 @@
 put your mtkclient installation here
 
-(mtkclient/mtkclient)
+(put in the second mtkclient folder that is in the first one)
+(mtkclient/**!!**mtkclient**!!**)
