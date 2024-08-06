@@ -2,15 +2,15 @@
 This is a Android All-in-One Script made with Windows Batch language.
 
 # Requirements
-> Python in System PATH
+> Python in System PATH (if on windows)
 
 > ADB and Fastboot
 
-> pyserial in System PATH
+> pyserial in System PATH (if on windows)
 
-> Drivers for BootROM and Secondary Bootloader
+> Drivers for BootROM and Secondary Bootloader (if on windows)
 
-> Fastboot Drivers for Device
+> Fastboot Drivers for Device (if on windows)
 
 > (if dumping) MTKClient requirements
 
