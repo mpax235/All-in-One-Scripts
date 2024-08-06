@@ -41,5 +41,5 @@ This is a Android All-in-One Script made with Windows Batch language.
 > For example, on `tungsten` (Fire HD 10 2023), if you try entering Meta Mode the device will instead boot into Normal Mode, however on `trona` (Fire HD 10 2021), the tablet boots into Meta Mode fine expect that it auto-reboots into normal mode after a while being in Meta Mode.
 # Credits
 - [mpax235](https://github.com/mpax235) for creating this Script
-- xyz and k4y0z for the script to send magic to the Preloader/BootROM in order to stop the timeout (expect BootROM where the timeout will just be longer)
-- [mtkclient](https://github.com/bkerler/mtkclient) for the scripts to dump the BootROM / Preloader
+- xyz and k4y0z for the script to send magic to the Preloader/BootROM in order to stop the timeout (expect BootROM where the timeout will just be longer), also credit to them for the exploits used to dump the BootROM.
+- [mtkclient](https://github.com/bkerler/mtkclient) for the scripts to dump the BootROM
