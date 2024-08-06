@@ -39,6 +39,13 @@ This is a Android All-in-One Script made with Windows Batch language.
 > Some devices has patched the `dev.write(b'METAMETA')`/`dev.write(b'ADVEMETA')` method, making it boot back to somewhere else instead of Meta Mode.
 > 
 > For example, on `tungsten` (Fire HD 10 2023), if you try entering Meta Mode the device will instead boot into Normal Mode, however on `trona` (Fire HD 10 2021), the tablet boots into Meta Mode fine expect that it auto-reboots into normal mode after a while being in Meta Mode.
+
+> [!WARNING]\
+> Some devices has Download Mode disabled, they do not appear on USB at all while in Download Mode for these devices.
+> 
+> For example `trona` and 2020 or later Amazon tablets has Download Mode disabled so if you erase `preloader`, the Tablet will hard brick since there is no Download Mode, requiring inexpensive tools to flash the `preloader` back.
+>
+> For these devices there is no known way to dump the BootROM as the dumping BootROM code in `mtkclient` requires you to be in Download Mode.
 # Credits
 - [mpax235](https://github.com/mpax235) for creating this Script
 - xyz and k4y0z for the script to send magic to the Preloader/BootROM in order to stop the timeout (expect BootROM where the timeout will just be longer), also credit to them for the exploits used to dump the BootROM.
