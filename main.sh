@@ -1,3 +1,5 @@
+#!/bin/bash
+
 clear
 ver=1.0.1
 echo -e "\e[34mmpax235's Android All-in-One Script\e[0m"
