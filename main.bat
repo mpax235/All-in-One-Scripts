@@ -1,5 +1,4 @@
 @echo off
-
 adb devices >nul 2>&1 && (
     echo found adb
 ) || (
@@ -13,9 +12,10 @@ adb devices >nul 2>&1 && (
     del platform-tools.zip
     echo deleting platform-tools folder
     pause
-    del platform-tools
+    rmdir platform-tools
 )
-
+echo turning on adb...
+adb devices
 cls
 set ver=1.0.1
 color 3
