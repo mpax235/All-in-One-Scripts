@@ -1,4 +1,5 @@
 @echo off
+
 adb devices >nul 2>&1 && (
     echo found adb
 ) || (
@@ -14,7 +15,8 @@ adb devices >nul 2>&1 && (
     pause
     rmdir platform-tools
 )
-echo turning on adb...
+echo Turning on ADB...
+
 adb devices
 cls
 set ver=1.0.1
