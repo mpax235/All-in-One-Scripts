@@ -1,5 +1,4 @@
 @echo off
-
 adb devices >nul 2>&1 && (
     echo found adb
 ) || (
@@ -9,12 +8,14 @@ adb devices >nul 2>&1 && (
     curl -o ./platform-tools.zip "https://dl.google.com/android/repository/platform-tools-latest-windows.zip"
     tar -xf platform-tools.zip
     xcopy platform-tools %chdir% /s /e
+    xcopy platform-tools workerscripts /s /e
     del platform-tools.zip
     echo deleting platform-tools folder
     pause
-    del platform-tools
+    rmdir platform-tools
 )
-
+echo turning on adb...
+adb devices
 cls
 set ver=1.0.1
 color 3
