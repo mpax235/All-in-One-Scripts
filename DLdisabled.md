@@ -9,6 +9,7 @@ If your device is not listed on here, you can dump the BootROM using the Script.
 > ***__DO NOT ATTEMPT TO ERASE OR MESS WITH THE `preloader` PARTITION IF YOUR DEVICE IS LISTED ON HERE, DOING SO WILL HARD BRICK THE DEVICE SINCE THERE IS NO DOWNLOAD MODE, REQUIRING INEXPENSIVE HARDWARE TO BRING THE DEVICE BACK TO LIFE.__***
 
 ### List of Devices
+#### Amazon
 | Device | When DL was Disabled | Platform | Codename |
 | ------------- | ------------- | ------------- | ------------- |
 | Amazon Fire HD 8 (2018)  | If Tablet was made in 12/2019 or later | MT8163V/B | karnak |
@@ -20,3 +21,7 @@ If your device is not listed on here, you can dump the BootROM using the Script.
 | Amazon Fire HD 8 (2022) | When the Tablet was Released | MT8169A | raphite |
 | Amazon Fire HD 10 (2023) | When the Tablet was Released | MT8186A | tungsten |
 | Amazon Fire Max 11 (2023) | When the Tablet was Released | MT8188J | sunstone |
+#### Oppo
+| Device | When DL was Disabled | Platform | Codename |
+| ------------- | ------------- | ------------- | ------------- |
+| Oppo A15s | Some variants | MT6765 | cph2179 |
