@@ -1,9 +1,9 @@
 # Download Mode disabled devices
 These are the list of devices with Download Mode disabled.
 
-Download Mode is disabled via efuses.
+In the SoC, Download Mode is disabled via efuses.
 
-If your device is not listed on here, you can dump the BootROM using the Script.
+If your device is not listed on here, you can dump the BootROM using the Script. Otherwise you cannot dump the BootROM using the Script.
 
 > [!CAUTION]\
 > ***__DO NOT ATTEMPT TO ERASE OR MESS WITH THE `preloader` PARTITIONS IF YOUR DEVICE IS LISTED ON HERE, DOING SO WILL HARD BRICK THE DEVICE SINCE THERE IS NO DOWNLOAD MODE, REQUIRING INEXPENSIVE HARDWARE LIKE A EMMC FLASHER TO BRING THE DEVICE BACK TO LIFE.__***
