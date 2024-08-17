@@ -10,6 +10,7 @@ If your device is not listed on here, you can dump the BootROM using the Script.
 
 ### List of Devices
 #### Amazon
+##### Tablets
 | Device | When DL was Disabled | Platform | Codename |
 | ------------- | ------------- | ------------- | ------------- |
 | Amazon Fire HD 8 (2018)  | If Tablet was made in 12/2019 or later | MT8163V/B | karnak |
@@ -21,6 +22,14 @@ If your device is not listed on here, you can dump the BootROM using the Script.
 | Amazon Fire HD 8 (2022) | When the Tablet was Released | MT8169A | raphite |
 | Amazon Fire HD 10 (2023) | When the Tablet was Released | MT8186A | tungsten |
 | Amazon Fire Max 11 (2023) | When the Tablet was Released | MT8188J | sunstone |
+##### TV Sticks
+| Device | When DL was Disabled | Platform | Codename |
+| ------------- | ------------- | ------------- | ------------- |
+| Amazon Fire TV Stick 4K (2018)  | If Stick was made in 12/2019 or later | MT8695 | mantis |
+| Amazon Fire TV Stick (2019) | If Stick was made in 12/2019 or later | MT8127D | tank |
+| Amazon Fire TV Stick Lite (2020) | When the Stick was Released | MT8695D | sheldon |
+| Amazon Fire TV Stick (2020) | When the Stick was Released | MT8695D | sheldon |
+| Amazon Fire TV Stick 4K Max (2021) | When the Stick was Released | MT8696 | ? |
 #### Oppo
 | Device | When DL was Disabled | Platform | Codename |
 | ------------- | ------------- | ------------- | ------------- |
