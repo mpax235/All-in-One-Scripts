@@ -53,3 +53,5 @@ This is a Android All-in-One Script made with Windows Batch language.
 - [mpax235](https://github.com/mpax235) for creating this Script
 - xyz and k4y0z for the script to send magic to the Preloader/BootROM in order to stop the timeout (expect BootROM where the timeout will just be longer), also credit to them for the exploits used to dump the BootROM.
 - [mtkclient](https://github.com/bkerler/mtkclient) for the scripts to dump the BootROM
+### Contributor Credits
+- [wish13yt](https://github.com/wish13yt) for contributing to this project and fixing bugs
