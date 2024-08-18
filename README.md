@@ -1,5 +1,9 @@
 # Android All-in-One Script
-This is a Android All-in-One Script made with Windows Batch language (Windows only), Python and macOS/Linux Shell language (macOS/Linux).
+This is a Android All-in-One Script made by **mpax235**.
+
+Made with:
+
+[![My Skills](https://skillicons.dev/icons?i=windows,py,linux,apple)](https://skillicons.dev)
 
 # Requirements
 > Python in System PATH (if on windows)
