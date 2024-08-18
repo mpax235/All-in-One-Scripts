@@ -23,5 +23,5 @@ if [ "$mode" == "1" ]; then
     cd "mtkclient"
     cd "mtkclient"
     clear
-    python3 mtk.py dumpbrom --filename=mediatek_brom_dump_android_script.bin
+    sudo python3 mtk.py dumpbrom --filename=mediatek_brom_dump_android_script.bin
 fi
