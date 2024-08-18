@@ -30,11 +30,13 @@ if "%device%"=="unlock_bl" (
     echo ARE YOU SURE TO UNLOCK THE BOOTLOADER?
     echo.
     set /p unlock="TYPE YES IN ALL CAPS "
-    cls
-    color 4
-    echo Attempting to unlock the bootloader...
-    echo If the bootloader was able to unlock, press Ctrl+C to stop this and enjoy your unlocked device!
-    echo.
-    fastboot oem unlock
-    fastboot flashing unlock
+    if "%unlock%"=="YES" (
+        cls
+        color 4
+        echo Attempting to unlock the bootloader...
+        echo If the bootloader was able to unlock, press Ctrl+C to stop this and enjoy your unlocked device!
+        echo.
+        fastboot oem unlock
+        fastboot flashing unlock
+    )
 )
