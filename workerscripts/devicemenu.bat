@@ -44,6 +44,14 @@ if "%device%"=="unlock_bl" (
     fastboot flashing unlock
     echo.
     echo The script was not able to unlock the bootloader, you may have to use a exploit.
+    echo But you will need to boot into a Live Linux environment to do this.
+    echo
+    echo Once in Linux download the script from "https://github.com/mpax235/Android-All-in-One-Script/releases"
+    echo and then navigate into the Folder on where the script was installed and then type ./main.sh
+    echo and type 3 to get to the Device Menu. From there you can use the unlock_bl function but this time
+    echo press enter to continue after following the 2 warnings and MAKE SURE TO SELECT A EXPLOIT FOR YOUR CORRECT DEVICE
+    echo OR ELSE IT WILL RESULT IN SOFT-BRICKS.
     echo.
+    echo To abort press any key.
     pause
 )
