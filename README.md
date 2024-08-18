@@ -51,7 +51,17 @@ Windows Batch Language **(Windows Only)**, Python and macOS/Linux Shell Language
 > For example `trona` and 2020 or later Amazon tablets has Download Mode disabled so if you erase `preloader`, the Tablet will hard brick since there is no Download Mode, requiring inexpensive tools to flash the `preloader` back.
 >
 > A list of devices having Download Mode disabled can be found in the root of the repo with the filename `DLdisabled.md`.
+> 
 > For these devices there is no known way to dump the BootROM as the dumping BootROM code in `mtkclient` requires you to be in Download Mode.
+
+> [!NOTE]\
+> Some devices have bootloader unlocking disabled or have a unlock code needed first.
+>
+> For example `nash` needs a unlock code obtained by needing a Motorola account and going through the gaining unlock code process.
+>
+> While `trona` can only be unlocked by flashing a `unlock.bin` to the `unlock` partition with `fastboot flash unlock unlock.bin`, but it has to be encrypted with Amazon's keys, making it very difficult to unlock the bootloader without exploits.
+>
+> And if you are a Windows user, the bootloader unlock stuff without `oem unlock` or `flashing unlock` can only be possible in Linux so you will have to boot into a Live Linux environment (not VM or WSL) in order to perform this.
 # Credits
 - [mpax235](https://github.com/mpax235) for creating this Script
 - xyz and k4y0z for the script to send magic to the Preloader/BootROM in order to stop the timeout (expect BootROM where the timeout will just be longer), also credit to them for the exploits used to dump the BootROM.
