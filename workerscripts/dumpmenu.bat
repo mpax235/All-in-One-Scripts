@@ -35,5 +35,5 @@ if "%mode%"=="1" (
     cd mtkclient
     color 7
     cls
-    sudo python3 mtk.py dumpbrom --filename=mediatek_brom_dump_android_script.bin
+    python3 mtk.py dumpbrom --filename=mediatek_brom_dump_android_script.bin
 )
