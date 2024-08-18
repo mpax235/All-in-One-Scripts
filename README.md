@@ -1,5 +1,5 @@
 # Android All-in-One Script
-This is a Android All-in-One Script made with Windows Batch language and Python.
+This is a Android All-in-One Script made with Windows Batch language (Windows only), Python and macOS/Linux Shell language (macOS/Linux).
 
 # Requirements
 > Python in System PATH (if on windows)
