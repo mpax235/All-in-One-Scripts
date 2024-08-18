@@ -29,7 +29,7 @@ This is a Android All-in-One Script made with Windows Batch language.
 
 > Now startup the script by typing in `main` (windows) or `./main.sh` (linux/macos). You should see the Terminal text color change to blue if successful or no errors.
 
-> To use the options, type the Number corresponding to the Option you want to use like (for example: you would type **1** if you want to reboot to OS).
+> To use the options, type the Number or Word corresponding to the Option you want to use like (for example: you would type **os** if you want to reboot to OS or **1** for the Boot Menu).
 
 # Information
 > [!NOTE]\
