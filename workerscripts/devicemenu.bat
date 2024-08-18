@@ -30,14 +30,20 @@ if "%device%"=="unlock_bl" (
     echo ARE YOU SURE TO UNLOCK THE BOOTLOADER?
     echo.
     set /p unlock="TYPE YES IN ALL CAPS "
+    echo.
+    cls
+    echo THIS IS YOUR FINAL WARNING TO BACKUP ANY IMPORTANT USER DATA. PRESS CTRL+C TO CANCEL
+    echo OR PRESS ENTER TO CONTINUE
+    echo.
+    set /p unlock="PRESS ENTER TO CONTINUE "
+    cls
+    echo Attempting to unlock the bootloader...
+    echo If the script was able to proceed, press Ctrl+C to cancel and enjoy your unlocked device!
+    echo.
+    fastboot oem unlock
+    fastboot flashing unlock
+    echo.
+    echo The script was not able to unlock the bootloader, you may have to use a exploit.
+    echo.
+    pause
 )
-
-if "%unlock%"=="YES" (
-        cls
-        color 4
-        echo Attempting to unlock the bootloader...
-        echo If the bootloader was able to unlock, press Ctrl+C to stop this and enjoy your unlocked device!
-        echo.
-        fastboot oem unlock
-        fastboot flashing unlock
-    )
