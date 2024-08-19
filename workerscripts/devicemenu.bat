@@ -11,7 +11,6 @@ echo *** Fastboot Devices ***
 fastboot devices
 echo.
 echo *** MENU ***
-echo.
 echo * BOOTLOADER STUFF *
 echo unlock_bl      =   Attempt to unlock the bootloader
 echo lock_bl        =   Lock the bootloader
