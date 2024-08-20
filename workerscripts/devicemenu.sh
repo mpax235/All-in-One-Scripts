@@ -19,115 +19,39 @@ echo
 
 read -p "Select a Option from the list with all letters lowercase: " mode
 
-if [ "$mode" == "os" ]; then
-    echo "Booting into Android..."
-    echo "-- IF THE SCRIPT GETS STUCK EXIT WITH CTRL+C --"
-    sudo adb reboot
-    echo "You should now boot into Android."
-elif [ "$mode" == "recovery" ]; then
-    echo "Booting into Android Recovery..."
-    echo "-- IF THE SCRIPT GETS STUCK EXIT WITH CTRL+C --"
-    sudo adb reboot recovery
-    echo "You should now boot into Android Recovery."
-elif [ "$mode" == "fastbootd" ]; then
-    echo "Booting into Android Fastboot..."
-    echo "-- IF THE SCRIPT GETS STUCK EXIT WITH CTRL+C --"
-    sudo adb reboot fastboot
-    echo "You should now boot into Android Fastboot."
-elif [ "$mode" == "fastboot" ]; then
-    echo "Booting into Fastboot..."
-    echo "-- IF THE SCRIPT GETS STUCK EXIT WITH CTRL+C --"
-    sudo adb reboot bootloader
-    echo "You should now boot into Fastboot."
-elif [ "$mode" == "fel" ]; then
-    echo "Attempting to boot into FEL mode..."
-    echo "-- IF THE SCRIPT GETS STUCK EXIT WITH CTRL+C --"
-    sudo adb reboot efex
-    echo "You should now boot into FEL mode."
-    echo "The screen will be off while in FEL mode."
-    echo "If you see anything on the Screen, this did not work."
-    echo "You will have to try again using U-Boot or Volume buttons."
-elif [ "$mode" == "odin" ]; then
-    echo "Before running, this script will check if you have a Exynos/Qualcomm Samsung device."
-    echo "If the script has detected the wrong device, it will refuse to boot it to Odin mode due to it"
-    echo "not being a Exynos/Qualcomm Samsung device. (YES, MTK Samsung devices will also be refused)"
+if [ "$mode" == "unlock_bl" ]; then
+    clear
+    echo "Make sure to enable OEM unlocking if theres a switch, otherwise you need to use a exploit."
+    read -p "Press enter to continue if you done so " unlock
+    adb reboot bootloader
+    clear
+    echo -e "\e[31mTHIS PROCESS WILL ERASE ALL USERDATA. PLEASE MAKE SURE YOU BACKUP YOUR IMPORTANT DATA"
+    echo -e "BEFORE CONTINUING."
     echo
-
-    read -p "ready? " ready
-
-    echo "Odin mode..."
-    sudo ./odinmodecheck.sh
-elif [ "$mode" == "os2" ]; then
-    echo "Booting into Android ..."
-    echo "-- IF THE SCRIPT GETS STUCK EXIT WITH CTRL+C --"
-    sudo fastboot reboot
-    echo "You should now boot into Android."
-elif [ "$mode" == "fastbootd2" ]; then
-    echo "Booting into Android Fastboot..."
-    echo "-- IF THE SCRIPT GETS STUCK EXIT WITH CTRL+C --"
-    sudo fastboot reboot fastboot
-    echo "You should now boot into Android Fastboot."
-elif [ "$mode" == "fastboot2" ]; then
-    echo "Booting into Fastboot..."
-    echo "-- IF THE SCRIPT GETS STUCK EXIT WITH CTRL+C --"
-    sudo fastboot reboot bootloader
-    echo "You should now boot into Fastboot."
-elif [ "$mode" == "meta" ]; then
-    adb shell reboot -p
-    echo "Please power off the device by holding the Power Button until it turns off."
-    echo "If you are using ADB, it will power off automatically."
-    echo "Then disconnect the USB cable if connected and then press ENTER to continue."
-    echo "Also check Python 3 by running Python3, if it says it does not exist, please install it."
-    echo "After installing or you have Python, install pyserial via 'pip3 install pyserial'."
+    echo -e "TO CONTINUE, TYPE "YES" IN ALL UPPERCASE LETTERS."
+    echo -e "ARE YOU SURE TO UNLOCK THE BOOTLOADER?"
     echo
-
-    read -p "ready? " ready
-
-    echo "Meta Mode..."
-    python3 meta.py
-    cd ..
-elif [ "$mode" == "factory" ]; then
-    adb shell reboot -p
-    echo "Please power off the device by holding the Power Button until it turns off."
-    echo "If you are using ADB, it will power off automatically."
-    echo "Then disconnect the USB cable if connected and then press ENTER to continue."
-    echo "Also check Python 3 by running Python3, if it says it does not exist, please install it."
-    echo "After installing or you have Python, install pyserial via 'pip3 install pyserial'."
+    read -p "TYPE YES IN ALL CAPS " unlock
     echo
-
-    read -p "ready? " ready
-
-    echo "Factory Mode..."
-    python3 factory.py
-    cd ..
-elif [ "$mode" == "preloader" ]; then
-    adb shell reboot -p
-    echo "Please power off the device by holding the Power Button until it turns off."
-    echo "If you are using ADB, it will power off automatically."
-    echo "Then disconnect the USB cable if connected and then press ENTER to continue."
-    echo "Also check Python 3 by running Python3, if it says it does not exist, please install it."
-    echo "After installing or you have Python, install pyserial via 'pip3 install pyserial'."
+    clear
+    echo -e "THIS IS YOUR FINAL WARNING TO BACKUP ANY IMPORTANT USER DATA. CLOSE THE TERMINAL TO CANCEL"
+    echo -e "OR PRESS ENTER TO CONTINUE"
     echo
-
-    read -p "ready? " ready
-
-    echo "Preloader Mode..."
-    cd "preloadermode"
-    sudo ./prepare.sh
-    cd ..
-elif [ "$mode" == "dlmode" ]; then
-    adb shell reboot -p
-    echo "Please power off the device by holding the Power Button until it turns off."
-    echo "If you are using ADB, it will power off automatically."
-    echo "Then disconnect the USB cable if connected and then press ENTER to continue."
-    echo "Also check Python 3 by running Python3, if it says it does not exist, please install it."
-    echo "After installing or you have Python, install pyserial via 'pip3 install pyserial'."
+    read -p "PRESS ENTER TO CONTINUE " unlock
+    clear
+    echo -e "Attempting to unlock the bootloader..."
+    echo -e "If the script was able to proceed, press Ctrl+C to cancel and enjoy your unlocked device!"
     echo
-
-    read -p "ready? " ready
-
-    echo "Download Mode..."
-    cd "preloadermode"
-    sudo ./prepare.sh
-    cd ..
+    fastboot oem unlock
+    fastboot flashing unlock
+    echo
+    echo -e "The script was not able to unlock the bootloader, you may have to use a exploit."
+    echo
+    echo -e "MAKE SURE TO SELECT A EXPLOIT FOR YOUR CORRECT DEVICE"
+    echo -e "OR ELSE IT WILL RESULT IN SOFT-BRICKS."
+    echo
+    read -p "Press any key to continue " unlock_alt
+    echo
+    clear
+    sudo ./unlock_alt.sh
 fi
