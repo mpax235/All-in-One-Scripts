@@ -38,6 +38,7 @@ if "%device%"=="unlock_bl" (
     cls
     echo Attempting to unlock the bootloader...
     echo If the script was able to proceed, press Ctrl+C to cancel and enjoy your unlocked device!
+    echo If you see a prompt, approve the prompt using the instructions on the Device's screen.
     echo.
     fastboot oem unlock
     fastboot flashing unlock
