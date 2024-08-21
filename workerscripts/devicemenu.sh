@@ -41,6 +41,7 @@ if [ "$mode" == "unlock_bl" ]; then
     clear
     echo -e "Attempting to unlock the bootloader..."
     echo -e "If the script was able to proceed, press Ctrl+C to cancel and enjoy your unlocked device!"
+    echo -e "If you see a prompt, approve the prompt using the instructions on the Device's screen."
     echo
     fastboot oem unlock
     fastboot flashing unlock
