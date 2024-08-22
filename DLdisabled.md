@@ -1,4 +1,4 @@
-# Download Mode disabled devices
+# Download Mode disabled devices (MTK Only!)
 These are the list of devices with Download Mode disabled.
 
 In the SoC, Download Mode is disabled via efuses.
