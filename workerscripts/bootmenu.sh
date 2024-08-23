@@ -61,15 +61,13 @@ elif [ "$mode" == "fel" ]; then
     echo "If you see anything on the Screen, this did not work."
     echo "You will have to try again using U-Boot or Volume buttons."
 elif [ "$mode" == "odin" ]; then
-    echo "Before running, this script will check if you have a Exynos/Qualcomm Samsung device."
-    echo "If the script has detected the wrong device, it will refuse to boot it to Odin mode due to it"
-    echo "not being a Exynos/Qualcomm Samsung device. (YES, MTK Samsung devices will also be refused)"
-    echo
-
-    read -p "ready? " ready
-
-    echo "Odin mode..."
-    sudo ./odinmodecheck.sh
+    echo "Booting into Odin Mode..."
+    echo "If you are not using a Exynos/Qualcomm Samsung device,"
+    echo "you'll end up in Fastboot mode instead."
+    adb reboot bootloader
+    echo "You should now boot into Odin Mode."
+    echo "If you see a Fastboot screen instead,"
+    echo "you dont have a Exynos/Qualcomm Samsung device."
 elif [ "$mode" == "os2" ]; then
     echo "Booting into Android ..."
     echo "-- IF THE SCRIPT GETS STUCK EXIT WITH CTRL+C --"
