@@ -2,7 +2,7 @@
 
 clear
 echo -e "\e[34mSelect which exploit to use. (MAKE SURE TO USE THE CORRECT ONE FOR YOUR DEVICE)\e[0m"
-echo -e "\e[34mTHE OPTIONS DO NOT CURRENTLY WORK. COMING SOON.\e[0m"
+echo -e "\e[31mTHE OPTIONS DO NOT CURRENTLY WORK. COMING SOON.\e[0m"
 echo
 echo -e "\e[93m--- AMAZON ---"
 echo -e "amonet-austin                                          'for the Fire 7 (2017)'"
