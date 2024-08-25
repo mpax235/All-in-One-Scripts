@@ -17,6 +17,7 @@ echo lock_bl        =   Lock the bootloader
 echo.
 echo * SYSTEM STUFF *
 echo bootanimation  =   Extract bootanimation.zip from the System
+echo framework      =   Extract the entire Android framework from the System
 echo.
 
 set /p device="Select a Option from the list with all letters lowercase: "
@@ -68,3 +69,10 @@ if "%device%"=="bootanimation" (
     echo Extracted, it will be found in your current directory of your terminal.
 )
 
+if "%device%"=="framework" (
+    echo Please plug in your device in the OS.
+    adb wait-for-device
+    echo Extracting the Android Framework...
+    adb pull /system/framework
+    echo Extracted, it will be found in your current directory of your terminal.
+)
