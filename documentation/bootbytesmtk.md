@@ -6,4 +6,4 @@
 | FACTFACT | Factory mode | Makes device boot into Factory menu if supported |
 | ADVEMETA | Advanced Meta mode | Makes device boot into Advanced Meta mode if supported |
 | FACTORYM | ATE Signaling Test | Makes device perform the ATE Signaling Test if supported |
-| READY | ? | ? |
+| AT+NBOOT | Normal Boot | Boots the device like normal |
