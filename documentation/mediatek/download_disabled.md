@@ -36,6 +36,7 @@ If your device is not listed on here, you can dump the BootROM using the Script.
 | Device | When DL was Disabled | Platform | Codename |
 | ------------- | ------------- | ------------- | ------------- |
 | Amazon Echo Dot (2018)  | If Assistant was made in 12/2019 or later | MT8516B | donut |
+| Amazon Echo (2019) | If Assistant was made in 12/2019 or later | MT8516B | ??? |
 #### Oppo
 | Device | When DL was Disabled | Platform | Codename |
 | ------------- | ------------- | ------------- | ------------- |
