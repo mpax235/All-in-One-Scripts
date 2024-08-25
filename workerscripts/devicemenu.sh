@@ -16,6 +16,9 @@ echo "- BOOTLOADER STUFF -"
 echo "unlock_bl      =   Attempt to unlock the bootloader"
 echo "lock_bl        =   Lock the bootloader"
 echo
+echo "- SYSTEM STUFF -"
+echo "bootanimation  =   Extract bootanimation.zip from the System"
+echo
 
 read -p "Select a Option from the list with all letters lowercase: " mode
 
@@ -56,4 +59,10 @@ if [ "$mode" == "unlock_bl" ]; then
     echo
     clear
     sudo ./unlock_alt.sh
+elif [ "$mode" == "bootanimation" ]; then
+    echo "Please plug in your device in the OS."
+    adb wait-for-device
+    echo "Extracting bootanimation.zip..."
+    adb pull /system/media/bootanimation.zip
+    echo "Extracted, it will be found in your current directory of your terminal."
 fi
