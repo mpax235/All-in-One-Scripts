@@ -44,20 +44,20 @@ set /p mode="Select a Option from the list with Number: "
 if "%mode%"=="1" (
     echo Boot Menu...
     cd "workerscripts"
+    cd "windows"
     bootmenu.bat
-    cd ..
 )
 
 if "%mode%"=="2" (
     echo Dump Menu...
     cd "workerscripts"
+    cd "windows"
     dumpmenu.bat
-    cd ..
 )
 
 if "%mode%"=="3" (
     echo Device Menu...
     cd "workerscripts"
+    cd "windows"
     devicemenu.bat
-    cd ..
 )

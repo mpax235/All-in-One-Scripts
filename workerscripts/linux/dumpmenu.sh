@@ -20,6 +20,7 @@ read -p "Select a Option from the list with Number: " mode
 if [ "$mode" == "1" ]; then
     echo "To use this option, put the second mtkclient folder (zip) or the entire folder (git clone) inside the mtkclient folder in workerscripts."
     read -p "Press enter to continue..."
+    cd ..
     cd "mtkclient"
     cd "mtkclient"
     clear

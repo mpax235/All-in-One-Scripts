@@ -62,17 +62,19 @@ if "%device%"=="unlock_bl" (
 )
 
 if "%device%"=="bootanimation" (
+    cd "C:\Users\%USERNAME%\Downloads"
     echo Please plug in your device in the OS.
     adb wait-for-device
     echo Extracting bootanimation.zip...
     adb pull /system/media/bootanimation.zip
-    echo Extracted, it will be found in your current directory of your terminal.
+    echo Extracted, it will be found in: C:\Users\%USERNAME%\Downloads.
 )
 
 if "%device%"=="framework" (
+    cd "C:\Users\%USERNAME%\Downloads"
     echo Please plug in your device in the OS.
     adb wait-for-device
     echo Extracting the Android Framework...
     adb pull /system/framework
-    echo Extracted, it will be found in your current directory of your terminal.
+    echo Extracted, it will be found in: C:\Users\%USERNAME%\Downloads.
 )

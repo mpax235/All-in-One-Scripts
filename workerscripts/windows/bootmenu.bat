@@ -116,8 +116,11 @@ if "%mode%"=="meta" (
     set /p ready="ready? "
     
     echo Meta Mode...
-    python meta.py
     cd ..
+    cd "python"
+    cd "bootbytes"
+    python metamode.py
+    cd ../../..
 )
 
 if "%mode%"=="factory" (
@@ -133,8 +136,11 @@ if "%mode%"=="factory" (
     set /p ready="ready? "
     
     echo Factory Mode...
-    python factory.py
     cd ..
+    cd "python"
+    cd "bootbytes"
+    python factory.py
+    cd ../../..
 )
 
 if "%mode%"=="preloader" (
@@ -150,9 +156,11 @@ if "%mode%"=="preloader" (
     set /p ready="ready? "
     
     echo Preloader Mode...
-    cd preloadermode
-    prepare.bat
     cd ..
+    cd "python"
+    cd "magic"
+    prepare.bat
+    cd ../../..
 )
 
 if "%mode%"=="dlmode" (
@@ -168,7 +176,9 @@ if "%mode%"=="dlmode" (
     set /p ready="ready? "
     
     echo Download Mode...
-    cd preloadermode
-    prepare.bat
     cd ..
+    cd "python"
+    cd "magic"
+    prepare.bat
+    cd ../../..
 )

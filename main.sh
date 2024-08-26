@@ -25,16 +25,19 @@ read -p "Select a Option from the list with Number: " mode
 if [ "$mode" == "1" ]; then
     echo "Boot Menu..."
     cd "workerscripts"
+    cd "linux"
     ./bootmenu.sh
     cd ..
 elif [ "$mode" == "2" ]; then
     echo "Dump Menu..."
     cd "workerscripts"
+    cd "linux"
     ./dumpmenu.sh
     cd ..
 elif [ "$mode" == "3" ]; then
     echo "Device Menu..."
     cd "workerscripts"
+    cd "linux"
     ./devicemenu.sh
     cd ..
 fi

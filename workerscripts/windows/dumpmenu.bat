@@ -19,6 +19,7 @@ echo.
 set /p mode="Select a Option from the list with Number: "
 
 if "%mode%"=="1" (
+    cd ..
     cd mtkclient
     if not exist "mtkclient\" (
         echo mtkclient not found.

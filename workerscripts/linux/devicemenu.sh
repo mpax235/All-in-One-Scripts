@@ -61,15 +61,17 @@ if [ "$mode" == "unlock_bl" ]; then
     clear
     sudo ./unlock_alt.sh
 elif [ "$mode" == "bootanimation" ]; then
+    cd "/home/$USER/"
     echo "Please plug in your device in the OS."
     adb wait-for-device
     echo "Extracting bootanimation.zip..."
     adb pull /system/media/bootanimation.zip
-    echo "Extracted, it will be found in your current directory of your terminal."
+    echo "Extracted, it will be found in: /home/$USER/."
 elif [ "$mode" == "framework" ]; then
+    cd "/home/$USER/"
     echo "Please plug in your device in the OS."
     adb wait-for-device
     echo "Extracting the Android Framework..."
     adb pull /system/framework
-    echo "Extracted, it will be found in your current directory of your terminal."
+    echo "Extracted, it will be found in: /home/$USER/."
 fi
