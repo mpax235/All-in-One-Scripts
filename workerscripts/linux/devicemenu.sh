@@ -17,8 +17,9 @@ echo "unlock_bl      =   Attempt to unlock the bootloader"
 echo "lock_bl        =   Lock the bootloader"
 echo
 echo "- SYSTEM STUFF -"
-echo "bootanimation  =   Extract bootanimation.zip from the System"
+echo "bootanimation  =   Extract bootanimation.zip from the System if it exists"
 echo "framework      =   Extract the entire Android framework from the System"
+echo "bootaudio      =   Extract bootaudio.mp3 from the System if it exists"
 echo
 
 read -p "Select a Option from the list with all letters lowercase: " mode
@@ -66,12 +67,19 @@ elif [ "$mode" == "bootanimation" ]; then
     adb wait-for-device
     echo "Extracting bootanimation.zip..."
     adb pull /system/media/bootanimation.zip
-    echo "Extracted, it will be found in: /home/$USER/."
+    echo "Extracted, it will be found in: /home/$USER/bootanimation.zip."
 elif [ "$mode" == "framework" ]; then
     cd "/home/$USER/"
     echo "Please plug in your device in the OS."
     adb wait-for-device
     echo "Extracting the Android Framework..."
     adb pull /system/framework
-    echo "Extracted, it will be found in: /home/$USER/."
+    echo "Extracted, it will be found in: /home/$USER/framework/."
+elif [ "$mode" == "bootaudio" ]; then
+    cd "/home/$USER/"
+    echo "Please plug in your device in the OS."
+    adb wait-for-device
+    echo "Extracting bootaudio.mp3..."
+    adb pull /system/media/bootaudio.mp3
+    echo "Extracted, it will be found in: /home/$USER/bootaudio.mp3."
 fi

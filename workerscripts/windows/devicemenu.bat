@@ -16,8 +16,9 @@ echo unlock_bl      =   Attempt to unlock the bootloader
 echo lock_bl        =   Lock the bootloader
 echo.
 echo * SYSTEM STUFF *
-echo bootanimation  =   Extract bootanimation.zip from the System
+echo bootanimation  =   Extract bootanimation.zip from the System if it exists
 echo framework      =   Extract the entire Android framework from the System
+echo bootaudio      =   Extract bootaudio.mp3 from the System if it exists
 echo.
 
 set /p device="Select a Option from the list with all letters lowercase: "
@@ -67,7 +68,7 @@ if "%device%"=="bootanimation" (
     adb wait-for-device
     echo Extracting bootanimation.zip...
     adb pull /system/media/bootanimation.zip
-    echo Extracted, it will be found in: C:\Users\%USERNAME%\Downloads.
+    echo Extracted, it will be found in: C:\Users\%USERNAME%\Downloads\bootanimation.zip.
 )
 
 if "%device%"=="framework" (
@@ -76,5 +77,14 @@ if "%device%"=="framework" (
     adb wait-for-device
     echo Extracting the Android Framework...
     adb pull /system/framework
-    echo Extracted, it will be found in: C:\Users\%USERNAME%\Downloads.
+    echo Extracted, it will be found in: C:\Users\%USERNAME%\Downloads\framework.
+)
+
+if "%device%"=="bootaudio" (
+    cd "C:\Users\%USERNAME%\Downloads"
+    echo Please plug in your device in the OS.
+    adb wait-for-device
+    echo Extracting bootaudio.mp3...
+    adb pull /system/media/bootaudio.mp3
+    echo Extracted, it will be found in: C:\Users\%USERNAME%\Downloads\bootaudio.mp3.
 )
