@@ -29,6 +29,7 @@ echo "meta           =   Little Kernel Meta Mode     - ONLY FOR MEDIATEK DEVICES
 echo "factory        =   Factory Mode                - ONLY FOR MEDIATEK DEVICES -"
 echo "preloader      =   Preloader Mode              - ONLY FOR MEDIATEK DEVICES -"
 echo "dlmode         =   BootROM Download Mode       - ONLY FOR MEDIATEK DEVICES WITH DL ACCESS -"
+echo "advancedmeta   =   Advanced Meta Mode          - ONLY FOR MEDIATEK DEVICES -"
 
 read -p "Select a Option from the list with Number: " mode
 
@@ -150,5 +151,22 @@ elif [ "$mode" == "dlmode" ]; then
     cd "python"
     cd "magic"
     sudo ./prepare.sh
+    cd ../../..
+elif [ "$mode" == "advancedmeta" ]; then
+    adb shell reboot -p
+    echo "Please power off the device by holding the Power Button until it turns off."
+    echo "If you are using ADB, it will power off automatically."
+    echo "Then disconnect the USB cable if connected and then press ENTER to continue."
+    echo "Also check Python 3 by running Python3, if it says it does not exist, please install it."
+    echo "After installing or you have Python, install pyserial via 'pip3 install pyserial'."
+    echo
+
+    read -p "ready? " ready
+
+    echo "Advanced Meta Mode..."
+    cd ..
+    cd "python"
+    cd "bootbytes"
+    python3 advancedmetamode.py
     cd ../../..
 fi
