@@ -1,7 +1,7 @@
 #!/bin/bash
 
 clear
-ver=1.0.2
+ver=1.0.3
 echo -e "\e[34mmpax235's Android All-in-One Script\e[0m"
 echo -e "\e[34mVersion $ver\e[0m"
 echo

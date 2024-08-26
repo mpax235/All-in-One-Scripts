@@ -19,7 +19,7 @@ echo Turning on ADB...
 
 adb devices
 cls
-set ver=1.0.2
+set ver=1.0.3
 color 3
 echo mpax235's Android All-in-One Script
 echo Version %ver%
