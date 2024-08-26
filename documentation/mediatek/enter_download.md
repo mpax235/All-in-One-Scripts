@@ -3,6 +3,6 @@ This is a list of Devices you can enter Download Mode in. Devices not marked on 
 ### List of Devices
 #### Amazon
 ##### Tablets
-| Device | When DL was Disabled | Platform | Codename |
+| Device | Buttons Method | Shorting Method | Versions |
 | ------------- | ------------- | ------------- | ------------- |
-| Amazon Fire HD 8 (2018)  | If Tablet was made in 12/2019 or later | MT8163V/B | karnak |
+| Amazon Fire (2015)  | Hold Volume Down while plugging in | Short the point by the right capaitor while plugging in | Up to 5.3.2 (**SW**) / All (**HW**) |
