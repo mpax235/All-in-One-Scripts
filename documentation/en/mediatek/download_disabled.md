@@ -37,6 +37,16 @@ If your device is not listed on here, you can dump the BootROM using the Script.
 | ------------- | ------------- | ------------- | ------------- |
 | Amazon Echo Dot (2018)  | If Assistant was made in 12/2019 or later | MT8516B | donut |
 | Amazon Echo (2019) | If Assistant was made in 12/2019 or later | MT8516B | ??? |
+| Amazon Echo Show 5 (2019) | If Assistant was made in 12/2019 or later | MT8163 | ??? |
+| Amazon Echo Show 8 (2019) | If Assistant was made in 12/2019 or later | MT8163 | ??? |
+| Amazon Echo Studio (2019) | If Assistant was made in 12/2019 or later | MT8516B | ??? |
+| Aamzon Echo (2020) | When the Assistant was Released | MT8512 | ??? |
+| Amazon Echo Dot (2020) | When the Assistant was Released | MT8512 | ??? |
+| Amazon Echo Show 5 (2021) | When the Assistant was Released | MT8163 | ??? |
+| Amazon Echo Show 8 (2021) | When the Assistant was Released | MT8183 | ??? |
+| Amazon Echo Show 10 (2021) | When the Assistant was Released | MT8183 | ??? |
+| Amazon Echo Dot (2022) | When the Assistant was Released | MT8519B | ??? |
+| Amazon Echo Show 5 (2013) | When the Assistant was Released | MT8169B | ??? |
 #### Oppo
 | Device | When DL was Disabled | Platform | Codename |
 | ------------- | ------------- | ------------- | ------------- |
