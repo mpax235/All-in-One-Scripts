@@ -50,6 +50,13 @@ If your device is not listed on here, you can dump the BootROM using the Script.
 | Amazon Echo Pop (2023) | When the Assistant was Released | MT8519 | ??? |
 | Amazon Echo Spot (2024) | When the Assistant was Released | MT8519 | ??? |
 | Amazon Echo Hub (2024) | When the Assistant was Released | MT8169A | ??? |
+##### e-Readers
+| Device | When DL was Disabled | Platform | Codename |
+| ------------- | ------------- | ------------- | ------------- |
+| Amazon Kindle Paperwrite (2021) | When the e-Reader was Released | MT8110 | ??? |
+| Amazon Kindle Paperwrite Signature Edition (2021) | When the e-Reader was Released | MT8110 | ??? |
+| Amazon Kindle (2022)  | When the e-Reader was Released | MT8113 | ??? |
+| Amazon Kindle Scribe (2022) | When the e-Reader was Released | MT8113 | ??? |
 #### Oppo
 | Device | When DL was Disabled | Platform | Codename |
 | ------------- | ------------- | ------------- | ------------- |
