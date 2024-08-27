@@ -46,7 +46,10 @@ If your device is not listed on here, you can dump the BootROM using the Script.
 | Amazon Echo Show 8 (2021) | When the Assistant was Released | MT8183 | ??? |
 | Amazon Echo Show 10 (2021) | When the Assistant was Released | MT8183 | ??? |
 | Amazon Echo Dot (2022) | When the Assistant was Released | MT8519B | ??? |
-| Amazon Echo Show 5 (2013) | When the Assistant was Released | MT8169B | ??? |
+| Amazon Echo Show 5 (2023) | When the Assistant was Released | MT8169B | ??? |
+| Amazon Echo Pop (2023) | When the Assistant was Released | MT8519 | ??? |
+| Amazon Echo Spot (2024) | When the Assistant was Released | MT8519 | ??? |
+| Amazon Echo Hub (2024) | When the Assistant was Released | MT8169A | ??? |
 #### Oppo
 | Device | When DL was Disabled | Platform | Codename |
 | ------------- | ------------- | ------------- | ------------- |
