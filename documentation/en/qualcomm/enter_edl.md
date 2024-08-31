@@ -1,4 +1,4 @@
-# Enter Download Mode on MTK devices
+# Enter EDL Mode on Qualcomm devices
 This is a list of Devices you can enter EDL Mode in. Devices not marked on here has not been added yet.
 ### List of Devices
 #### Meta
