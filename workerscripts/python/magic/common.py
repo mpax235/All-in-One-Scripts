@@ -97,7 +97,7 @@ class Device:
                 break
             self.dev.flushInput()
 
-        # complete sequence
+        # now do the start command sequence
         self.check(self._writeb(b'\x0a'), b'\xf5')
         self.check(self._writeb(b'\x50'), b'\xaf')
         self.check(self._writeb(b'\x05'), b'\xfa')
