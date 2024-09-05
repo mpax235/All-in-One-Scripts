@@ -56,7 +56,7 @@ To make the Dump Menu usable, use the following commands below:
 
 `sudo udevadm control -R`
 
-Make sure to reboot after adding the User to dialout/plugdev. If the device has a vendor interface of 0xFF (like LG), make sure to add "blacklist qcaux"to "/etc/mobprobe.d/blacklist.conf". 
+Make sure to reboot after adding the User to dialout/plugdev. If the device has a vendor interface of 0xFF (like LG), make sure to add "blacklist qcaux" to "/etc/mobprobe.d/blacklist.conf". 
 ## Arch Linux-based distributions
 **THIS IS CURRENTLY WIP, COME BACK SOON TO SEE CHANGES**
 
