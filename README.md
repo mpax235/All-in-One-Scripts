@@ -57,13 +57,38 @@ To make the Dump Menu usable, use the following commands below:
 `sudo udevadm control -R`
 
 Make sure to reboot after adding the User to dialout/plugdev. If the device has a vendor interface of 0xFF (like LG), make sure to add "blacklist qcaux" to "/etc/mobprobe.d/blacklist.conf". 
-## Arch Linux-based distributions
-**THIS IS CURRENTLY WIP, COME BACK SOON TO SEE CHANGES**
+### Arch-based distributions
+For Arch-based distributions, use the following commands below:
 
-For Arch Linux-based distributions, use the following commands below:
+`(sudo) pacman -S adb fastboot python python-pyserial`
 
-`(sudo) pacman -S python-pip git libusb fuse2`
+Then turn on Developer Options and enable USB Debugging, next plug in your Android device into your Computer.
 
+If you see a prompt then approve it, if there is no prompt then try using `(sudo) adb kill-server` and `(sudo) adb devices` after the first command.
+
+For unlocking the bootloader, turn on OEM Unlocking in order to continue.
+
+To make the Dump Menu usable, use the following commands below:
+
+`(sudo) pacman -S python python-pip git libusb fuse2`
+
+`git clone https://github.com/bkerler/mtkclient`
+
+`(sudo) mv mtkclient /home/$USER`
+
+`echo $USER (just to confirm it says your user to combine /home/$USER)`
+
+`cd /home/$USER/mtkclient`
+
+`(sudo) usermod -a -G plugdev $USER`
+
+`(sudo) usermod -a -G dialout $USER`
+
+`(sudo) cp mtkclient/Setup/Linux/*.rules /etc/udev/rules.d`
+
+`(sudo) udevadm control -R`
+
+Make sure to reboot after adding the User to dialout/plugdev. If the device has a vendor interface of 0xFF (like LG), make sure to add "blacklist qcaux" to "/etc/mobprobe.d/blacklist.conf". 
 # How to Use
 > Download the **zip (not source code)** from the Releases page.
 
