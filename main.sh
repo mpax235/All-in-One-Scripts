@@ -2,7 +2,8 @@
 
 clear
 ver=1.0.3
-echo -e "\e[34mmpax235's Android All-in-One Script\e[0m"
+echo -e "\e[34mAndroid All-in-One Script\e[0m"
+echo -e "\e[34mMade by mpax235\e[0m"
 echo -e "\e[34mVersion $ver\e[0m"
 echo
 echo -e "\e[1m--- MAIN MENU ---\e[0m"
