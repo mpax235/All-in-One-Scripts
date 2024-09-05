@@ -19,6 +19,51 @@ Windows Batch Language **(Windows Only)**, Python and macOS/Linux Shell Language
 
 **Not following these requirements results in the Script not working or have limited capability.**
 
+# Installing the Required Stuff
+## Linux
+### Debian-based distributions
+For Debian-based distributions, use the following commands below:
+
+`sudo apt-get install adb fastboot python3 python3-serial`
+
+Then turn on Developer Options and enable USB Debugging, next plug in your Android device into your Computer.
+
+If you see a prompt then approve it, if there is no prompt then try using `sudo adb kill-server` and `sudo adb devices` after the first command.
+
+For unlocking the bootloader, turn on OEM Unlocking in order to continue.
+
+To make the Dump Menu usable, use the following commands below:
+
+`sudo apt install git libusb-1.0-0 python3-pip libfuse2`
+
+`git clone https://github.com/bkerler/mtkclient`
+
+`sudo mv mtkclient /home/$USER`
+
+`echo $USER (just to confirm it says your user to combine /home/$USER)`
+
+`cd /home/$USER/mtkclient`
+
+`pip3 install -r requirements.txt`
+
+`pip3 install .`
+
+`sudo usermod -a -G plugdev $USER`
+
+`sudo usermod -a -G dialout $USER`
+
+`sudo cp mtkclient/Setup/Linux/*.rules /etc/udev/rules.d`
+
+`sudo udevadm control -R`
+
+Make sure to reboot after adding the User to dialout/plugdev. If the device has a vendor interface of 0xFF (like LG), make sure to add "blacklist qcaux"to "/etc/mobprobe.d/blacklist.conf". 
+## Arch Linux-based distributions
+**THIS IS CURRENTLY WIP, COME BACK SOON TO SEE CHANGES**
+
+For Arch Linux-based distributions, use the following commands below:
+
+`(sudo) pacman -S python-pip git libusb fuse2`
+
 # How to Use
 > Download the **zip (not source code)** from the Releases page.
 
