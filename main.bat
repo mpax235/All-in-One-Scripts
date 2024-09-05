@@ -21,7 +21,8 @@ adb devices
 cls
 set ver=1.0.3
 color 3
-echo mpax235's Android All-in-One Script
+echo Android All-in-One Script
+echo Made by mpax235
 echo Version %ver%
 echo.
 echo *** MAIN MENU ***
