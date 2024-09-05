@@ -1,7 +1,7 @@
 @echo off
 cls
 color 3
-echo mpax235's Android All-in-One Script
+echo Android All-in-One Script
 echo *** BOOT MENU ***
 echo.
 echo *** ADB Devices ***
