@@ -18,3 +18,4 @@ echo -e "amonet-biscuit                                         'for the Echo Do
 echo -e "amonet-giza                                            'for the Fire HD 8 (2016)'"
 echo -e "kamakiri-mantis                                        'for the Fire TV Stick 4K (2018)'"
 echo -e "kamakiri-sheldon                                       'for the Fire TV Stick and Lite (2020)'"
+echo -e "Temporary Unlock for Maverick (TETHERED)               'for the Fire HD 10 (2019)'"
