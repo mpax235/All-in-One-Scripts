@@ -1,7 +1,7 @@
 #!/bin/bash
 
 clear
-echo -e "\e[34mmpax235's Android All-in-One Script\e[0m"
+echo -e "\e[34mAndroid All-in-One Script\e[0m"
 echo -e "\e[1m--- DUMP MENU ---\e[0m"
 echo
 echo -e "\e[1m--- ADB Devices ---\e[0m"
