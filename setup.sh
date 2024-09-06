@@ -4,7 +4,10 @@ echo -e "SELinux disabling does not happen if SELinux is entirely disabled."
 echo -e ""
 read -p "Press any key to continue... " setup
 
+# disable SElinux temporarily
 sudo setenforce 0
+
+# do the fun stuff
 sudo chmod +x ./main.sh
 cd workerscripts
 cd linux
@@ -12,3 +15,6 @@ sudo chmod +x ./bootmenu.sh
 sudo chmod +x ./devicemenu.sh
 sudo chmod +x ./dumpmenu.sh
 sudo chmod +x ./unlock_alt.sh
+
+# reenable SElinux
+sudo setenforce 1
