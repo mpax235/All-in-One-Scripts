@@ -10,9 +10,6 @@ sudo setenforce 0
 # install the bare packages
 sudo apt install python3 python3-serial adb fastboot
 
-# setup ADB and Fastboot
-
-
 # do the fun stuff like making all .sh files usable without the "Permission denied" errors
 sudo chmod +x ./main.sh
 cd workerscripts
@@ -25,6 +22,14 @@ cd ..
 cd python
 cd magic
 sudo chmod +x ./prepare.sh
+cd ../../..
+
+# ask user if they want to install mtkclient
+read -p "Do you want to install mtkclient to finish the installation? (1 for yes, 0 for no)" mtkclient
+
+if [ "$mtkclient" == "1" ]; then
+    echo -e "Coming soon!"
+fi
 
 # reenable SElinux
 sudo setenforce 1
