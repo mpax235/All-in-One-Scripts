@@ -4,6 +4,7 @@ echo -e "SELinux disabling does not happen if SELinux is entirely disabled."
 echo -e ""
 read -p "Press any key to continue... " setup
 
+sudo setenforce 0
 sudo chmod +x ./main.sh
 cd workerscripts
 cd linux
