@@ -27,11 +27,15 @@ echo Version %ver%
 echo.
 echo *** MAIN MENU ***
 echo.
-echo *** ADB Devices ***
+echo = ADB Devices =================================
+echo.
 adb devices
 echo.
-echo *** Fastboot Devices ***
+echo = FASTBOOT DEVICES ============================
+echo.
 fastboot devices
+echo.
+echo ===============================================
 echo.
 echo *** MENU ***
 echo.
