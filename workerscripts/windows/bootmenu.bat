@@ -4,11 +4,15 @@ color 3
 echo Android All-in-One Script
 echo *** BOOT MENU ***
 echo.
-echo *** ADB Devices ***
+echo = ADB Devices =================================
+echo.
 adb devices
 echo.
-echo *** Fastboot Devices ***
+echo = FASTBOOT DEVICES ============================
+echo.
 fastboot devices
+echo.
+echo ===============================================
 echo.
 echo *** MENU ***
 echo.
