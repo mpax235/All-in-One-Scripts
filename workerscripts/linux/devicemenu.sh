@@ -5,13 +5,18 @@ clear
 echo -e "\e[34mAndroid All-in-One Script\e[0m"
 echo -e "\e[1m--- DEVICE MENU ---\e[0m"
 echo
-echo -e "\e[1m--- ADB Devices ---\e[0m"
+echo -e "\e[1m= ADB Devices =================================\e[0m"
+echo
 adb devices
 echo
-echo -e "\e[1m--- Fastboot Devices ---\e[0m"
+echo -e "\e[1m= FASTBOOT DEVICES ============================\e[0m"
+echo
 fastboot devices
 echo
+echo -e "\e[1m===============================================\e[0m"
+echo
 echo -e "\e[1m--- MENU ---\e[0m"
+echo
 echo "- BOOTLOADER STUFF -"
 echo "unlock_bl      =   Attempt to unlock the bootloader"
 echo "lock_bl        =   Lock the bootloader"
