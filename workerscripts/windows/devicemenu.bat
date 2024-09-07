@@ -57,7 +57,7 @@ if "%device%"=="unlock_bl" (
     echo The script was not able to unlock the bootloader, you may have to use a exploit.
     echo But you will need to boot into a Live Linux environment (no WSL or VM) to do this.
     echo
-    echo Once in Linux download the script from "https://github.com/mpax235/Android-All-in-One-Script/releases"
+    echo Once in Linux download the script from GitHub.
     echo and then navigate into the Folder on where the script was installed and then type ./main.sh
     echo and type 3 to get to the Device Menu. From there you can use the unlock_bl function but this time
     echo press enter to continue after following the 2 warnings and MAKE SURE TO SELECT A EXPLOIT FOR YOUR CORRECT DEVICE
