@@ -4,13 +4,18 @@ clear
 echo -e "\e[34mAndroid All-in-One Script\e[0m"
 echo -e "\e[1m--- DUMP MENU ---\e[0m"
 echo
-echo -e "\e[1m--- ADB Devices ---\e[0m"
+echo -e "\e[1m= ADB Devices =================================\e[0m"
+echo
 adb devices
 echo
-echo -e "\e[1m--- Fastboot Devices ---\e[0m"
+echo -e "\e[1m= FASTBOOT DEVICES ============================\e[0m"
+echo
 fastboot devices
 echo
+echo -e "\e[1m===============================================\e[0m"
+echo
 echo -e "\e[1m--- MENU ---\e[0m"
+echo
 echo "- MEDIATEK STUFF -"
 echo "(1)  brom           =   Dump the SoC's BootROM"
 echo
