@@ -4,13 +4,18 @@ color 3
 echo Android All-in-One Script
 echo *** DEVICE MENU ***
 echo.
-echo *** ADB Devices ***
+echo = ADB Devices =================================
+echo.
 adb devices
 echo.
-echo *** Fastboot Devices ***
+echo = FASTBOOT DEVICES ============================
+echo.
 fastboot devices
 echo.
+echo ===============================================
+echo.
 echo *** MENU ***
+echo.
 echo * BOOTLOADER STUFF *
 echo unlock_bl      =   Attempt to unlock the bootloader
 echo lock_bl        =   Lock the bootloader
