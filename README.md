@@ -3,7 +3,7 @@ This is a Android All-in-One Script made by **mpax235**.
 
 ### **Made with:**
 
-Windows Batch Language **(Windows Only)**, Python and macOS/Linux Shell Language **(macOS/Linux)**
+Windows Batch Language **(Windows Only)**, macOS/Linux Shell Language **(macOS/Linux Only)** and Python
 # Requirements
 > Python in System PATH (if on windows)
 
