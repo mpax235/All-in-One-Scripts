@@ -123,8 +123,8 @@ if "%mode%"=="meta" (
     echo Meta Mode...
     cd ..
     cd "python"
-    cd "bootbytes"
-    python metamode.py
+    cd "commands_pl"
+    python METAMETA.py
     cd ../../..
 )
 
@@ -143,8 +143,8 @@ if "%mode%"=="factory" (
     echo Factory Mode...
     cd ..
     cd "python"
-    cd "bootbytes"
-    python factory.py
+    cd "commands_pl"
+    python FACTFACT.py
     cd ../../..
 )
 
@@ -163,9 +163,10 @@ if "%mode%"=="preloader" (
     echo Preloader Mode...
     cd ..
     cd "python"
-    cd "magic"
+    cd "commands"
+    cd "start"
     prepare.bat
-    cd ../../..
+    cd ../../../..
 )
 
 if "%mode%"=="dlmode" (
@@ -183,9 +184,10 @@ if "%mode%"=="dlmode" (
     echo Download Mode...
     cd ..
     cd "python"
-    cd "magic"
+    cd "commands"
+    cd "start"
     prepare.bat
-    cd ../../..
+    cd ../../../..
 )
 
 if "%mode%"=="advancedmeta" (
@@ -203,7 +205,7 @@ if "%mode%"=="advancedmeta" (
     echo Advanced Meta Mode...
     cd ..
     cd "python"
-    cd "bootbytes"
-    python advancedmetamode.py
+    cd "commands_pl"
+    python ADVEMETA.py
     cd ../../..
 )

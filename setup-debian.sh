@@ -20,9 +20,10 @@ sudo chmod +x ./dumpmenu.sh
 sudo chmod +x ./unlock_alt.sh
 cd ..
 cd python
-cd magic
+cd commands
+cd start
 sudo chmod +x ./prepare.sh
-cd ../../..
+cd ../../../..
 
 # ask user if they want to install mtkclient
 read -p "Do you want to install mtkclient to finish the installation? (1 for yes, 0 for no)" mtkclient

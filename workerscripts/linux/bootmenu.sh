@@ -103,8 +103,8 @@ elif [ "$mode" == "meta" ]; then
     echo "Meta Mode..."
     cd ..
     cd "python"
-    cd "bootbytes"
-    python3 metamode.py
+    cd "commands_pl"
+    python3 METAMETA.py
     cd ../../..
 elif [ "$mode" == "factory" ]; then
     adb shell reboot -p
@@ -120,8 +120,8 @@ elif [ "$mode" == "factory" ]; then
     echo "Factory Mode..."
     cd ..
     cd "python"
-    cd "bootbytes"
-    python3 factorymode.py
+    cd "commands_pl"
+    python3 FACTFACT.py
     cd ../../..
 elif [ "$mode" == "preloader" ]; then
     adb shell reboot -p
@@ -137,9 +137,10 @@ elif [ "$mode" == "preloader" ]; then
     echo "Preloader Mode..."
     cd ..
     cd "python"
-    cd "magic"
+    cd "commands"
+    cd "start"
     sudo ./prepare.sh
-    cd ../../..
+    cd ../../../..
 elif [ "$mode" == "dlmode" ]; then
     adb shell reboot -p
     echo "Please power off the device by holding the Power Button until it turns off."
@@ -154,9 +155,10 @@ elif [ "$mode" == "dlmode" ]; then
     echo "Download Mode..."
     cd ..
     cd "python"
-    cd "magic"
+    cd "commands"
+    cd "start"
     sudo ./prepare.sh
-    cd ../../..
+    cd ../../../..
 elif [ "$mode" == "advancedmeta" ]; then
     adb shell reboot -p
     echo "Please power off the device by holding the Power Button until it turns off."
@@ -171,7 +173,7 @@ elif [ "$mode" == "advancedmeta" ]; then
     echo "Advanced Meta Mode..."
     cd ..
     cd "python"
-    cd "bootbytes"
-    python3 advancedmetamode.py
+    cd "commands_pl"
+    python3 ADVEMETA.py
     cd ../../..
 fi
