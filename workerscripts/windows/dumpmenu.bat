@@ -38,6 +38,13 @@ if "%mode%"=="1" (
         exit /b
     )
     cd mtkclient
+    color 4
+    cls
+    echo WARNING! THERE IS A POTENTIAL FOR A BSOD CAUSED BY MTKCLIENT DURING THIS PROCESS.
+    echo USE AT YOUR OWN RISK.
+    echo.
+    echo PRESS ENTER TO CONTINUE.
+    pause
     color 7
     cls
     python3 mtk.py dumpbrom --filename=mediatek_brom_dump_android_script.bin
