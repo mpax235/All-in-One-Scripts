@@ -4,6 +4,9 @@ echo -e "SELinux disabling does not happen if SELinux is entirely disabled."
 echo
 read -p "Press any key to continue... " setup
 
+# install SELinux packages in order to disable SELinux
+sudo apt install selinux-utils
+
 # disable SElinux temporarily
 sudo setenforce 0
 
