@@ -1,7 +1,6 @@
 #!/bin/bash
 
 clear
-ver=1.0.3
 echo -e "\e[34mAll-in-One Scripts\e[0m"
 echo -e "\e[34mMade by mpax235\e[0m"
 echo
