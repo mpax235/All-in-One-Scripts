@@ -1,4 +1,4 @@
-echo "This will setup the Android All-in-One Script for use."
+echo "This will setup the All-in-One Scripts for use."
 echo ""
 pause
 

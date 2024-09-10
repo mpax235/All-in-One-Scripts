@@ -1,4 +1,4 @@
-echo -e "This will setup the Android All-in-One Script for use."
+echo -e "This will setup the All-in-One Scripts for use."
 echo -e "This will also disable SELinux temporarily to make sure nothing goes wrong, and then re-enable it after."
 echo -e "SELinux disabling does not happen if SELinux is entirely disabled."
 echo
@@ -14,6 +14,7 @@ sudo setenforce 0
 sudo apt install python3 python3-serial adb fastboot
 
 # do the fun stuff like making all .sh files usable without the "Permission denied" errors
+cd "Android All-in-One Script"
 sudo chmod +x ./main.sh
 cd workerscripts
 cd linux
@@ -26,7 +27,7 @@ cd python
 cd commands
 cd start
 sudo chmod +x ./prepare.sh
-cd ../../../..
+cd ../../../../..
 
 # ask user if they want to install mtkclient
 read -p "Do you want to install mtkclient to finish the installation? (1 for yes, 0 for no)" mtkclient
