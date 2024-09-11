@@ -7,6 +7,8 @@ This is a list of Devices you can enter BIOS / UEFI in. Devices not marked on he
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | ThinkPad W530 | Hold F1 (Setup), F10 (Diagnostics), F12 (Boot Menu) or Enter (Interrupt Menu) while starting the ThinkPad | Remove all Drives | All (**SW**) / All (**HW**) | Core i7-3720/3740/3820/3840QM/3920/3940XM |
 | ThinkPad W540 | Hold F1 (Setup), F10 (Diagnostics), F12 (Boot Menu) or Enter (Interrupt Menu) while starting the ThinkPad | Remove all Drives | All (**SW**) / All (**HW**) | Core i5-4200/4210/4330M/i7-4600M/4700/4710/4800/4810/4900/4910MQ/4930MX |
+| ThinkPad W541 | Hold F1 (Setup), F10 (Diagnostics), F12 (Boot Menu) or Enter (Interrupt Menu) while starting the ThinkPad | Remove all Drives | All (**SW**) / All (**HW**) | Core i5-4210/4340M/i7-4600M/4710/4810/4910MQ/4940MX |
+| ThinkPad W550s | Hold F1 (Setup), F10 (Diagnostics), F12 (Boot Menu) or Enter (Interrupt Menu) while starting the ThinkPad | Remove all Drives | All (**SW**) / All (**HW**) | Core i5-5300U/i7-5500/5600U |
 ##### IdeaPad
 | Device | Keyboard Method | Shorting / Hardware Method | Versions | Platform |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
