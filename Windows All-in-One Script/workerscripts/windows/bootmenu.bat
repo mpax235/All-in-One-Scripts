@@ -37,9 +37,11 @@ if "%mode%"=="recovery" (
 )
 
 if "%mode%"=="uefisetup" (
-    echo Make sure to save your work as this will force close everything.
+    echo Make sure to save your work as this will force close everything. Just in case it does not hibernate.
     pause
     echo Booting into UEFI Setup in 5 seconds...
+    echo After the System shuts off, you can boot the System back up and you'll be in the Setup.
+    pause
     sleep 5
-    shutdown /r /fw /f /t 0
+    shutdown /h /fw
 )
