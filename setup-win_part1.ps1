@@ -13,7 +13,7 @@ pause
 echo "Starting Microsoft Store in 5 seconds, press the 'Get' button on the Python page..."
 echo "After you have done so, after closing Microsoft Store, press Enter to continue the setup."
 sleep 5
-Start-Process "ms-windows-store://pdp/?productid=9ncvdn91xzqp"
+Start-Process "ms-windows-store://pdp/?productid=9pnrbtzxmb4z"
 echo ""
 echo "If you came back here, the script will assume you have Python installed, please make sure you have it installed"
 echo "and then press Enter to continue."
