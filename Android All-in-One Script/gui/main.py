@@ -1,4 +1,3 @@
-#!/bin/bash
 # MIT License
 #
 # Copyright (c) 2025 mpax235
@@ -21,4 +20,34 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-python3 main.py
+#####################
+# PYQT6 IMPORTS
+#####################
+from PyQt6.QtGui import QFontDatabase, QIcon
+from PyQt6.QtWidgets import QApplication
+
+#####################
+# IMPORTS
+#####################
+from components.MainWindow import MainWindow
+
+#####################
+# PYTHON IMPORTS
+#####################
+import sys
+import os
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+
+    with open("styles/main.qss", "r") as file:
+        app.setStyleSheet(file.read())
+
+    montserrat_font = QFontDatabase.addApplicationFont("fonts/montserrat/Montserrat-Light.ttf")
+    
+    font_families = QFontDatabase.applicationFontFamilies(montserrat_font)
+
+    app.setApplicationName("AndroidAllInOneScript")
+    
+    window = MainWindow()
+    app.exec()

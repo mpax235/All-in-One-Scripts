@@ -1,4 +1,3 @@
-#!/bin/bash
 # MIT License
 #
 # Copyright (c) 2025 mpax235
@@ -21,4 +20,15 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-python3 main.py
+#####################
+# PYTHON IMPORTS
+#####################
+import sys
+import os
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)

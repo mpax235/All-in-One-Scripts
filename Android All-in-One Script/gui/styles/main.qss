@@ -1,0 +1,36 @@
+QMainWindow {
+    background-color: #000000;
+    color: #00ffff;
+}
+
+QToolBar {
+    background-color: rgba(22, 22, 22, 0.37);
+    border: none;
+}
+
+QDialog {
+    background-color: #000000;
+    color: #00ffff;
+}
+
+QDialog QLabel {
+    color: #00ffff;
+}
+
+QMainWindow QLabel {
+    color: #00ffff;
+}
+
+QPushButton {
+    background-color: rgba(22, 22, 22, 0.37);
+    border-radius: 12px;
+    font-family: 'Montserrat';
+    border: 1px solid rgba(0, 255, 255, 0.18);
+    color: #00ffff;
+    padding: 10px 15px;
+}
+
+QPushButton:hover {
+    background-color: rgba(0, 255, 255, 0.37);
+    color: #000000;
+}
