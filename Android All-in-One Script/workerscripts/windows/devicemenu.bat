@@ -116,3 +116,4 @@ if "%device%"=="bootaudio" (
     adb pull /system/media/bootaudio.mp3
     echo Extracted, it will be found in: C:\Users\%USERNAME%\Downloads\bootaudio.mp3.
 )
+color 7

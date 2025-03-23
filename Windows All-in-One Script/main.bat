@@ -22,13 +22,15 @@
 :: SOFTWARE.
 
 cls
+
+net session >nul 2>&1
 if '%errorlevel%' NEQ '0' (
     echo This script requires Admin permissions. Please reopen Command Prompt as admin
     echo and then execute the script again.
-    wait 5
-    exit
+    timeout /t 5 >nul
+    exit /b
 )
-set ver=1.0.0
+set ver=1.1.0
 color 3
 echo Windows All-in-One Script
 echo Made by mpax235
@@ -50,3 +52,4 @@ if "%mode%"=="1" (
     bootmenu.bat
     cd ..
 )
+color 7

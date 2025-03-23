@@ -71,3 +71,4 @@ if "%mode%"=="1" (
     cls
     python3 mtk.py dumpbrom --filename=mediatek_brom_dump_android_script.bin
 )
+color 7

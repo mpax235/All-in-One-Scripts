@@ -17,6 +17,8 @@ Windows Batch Language **(Windows Only)**, macOS/Linux Shell Language **(macOS/L
 
 > (if dumping) **MTKClient** requirements
 
+> (if using the gui version) **PyQt6**
+
 **Not following these requirements results in the Script not working or have limited capability.**
 
 # Installing the Required Stuff

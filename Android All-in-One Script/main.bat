@@ -40,7 +40,7 @@ echo Turning on ADB...
 
 adb devices
 cls
-set ver=1.0.3
+set ver=2.0.0
 color 3
 echo Android All-in-One Script
 echo Made by mpax235
@@ -95,3 +95,4 @@ if "%mode%"=="4" (
     python main.py
     cd ..
 )
+color 7

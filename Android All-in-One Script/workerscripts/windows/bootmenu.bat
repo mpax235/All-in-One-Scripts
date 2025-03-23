@@ -231,3 +231,4 @@ if "%mode%"=="advancedmeta" (
     python ADVEMETA.py
     cd ../../..
 )
+color 7
